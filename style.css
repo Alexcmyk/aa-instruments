@@ -175,6 +175,7 @@ body {
   margin: 0 auto;
   grid-template-columns: repeat(12, 1fr);
   padding: 0 20px;
+  height: 100vh;
   position: relative;
   background-image: url(./assets/imgs/bg-img.svg);
   background-repeat: no-repeat;
@@ -266,11 +267,10 @@ h1 {
 }
 
 section.hero {
-  height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
   grid-column: 4 / span 6;
+  margin-top: 150px;
 }
 
 div.content .icon {
@@ -287,7 +287,7 @@ section.hero div.content {
 }
 
 section.hero div.content-contact {
-  margin-top: 90px;
+  margin-bottom: 70px;
 }
 
 /* form styles */
