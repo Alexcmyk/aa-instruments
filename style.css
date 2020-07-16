@@ -198,7 +198,7 @@ a {
 span.underline {
   width: 0;
   height: 2px;
-  background-color: #68d1e9;
+  background-color: #fff;
   display: block;
   margin-top: 5px;
   transition: all 0.1s ease-in;
