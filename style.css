@@ -1,0 +1,347 @@
+@font-face {
+  font-family: "Futura Light";
+  src: url(./assets/fonts/FUTURAL.TTF);
+}
+
+@font-face {
+  font-family: "Futura Medium";
+  src: url(./assets/fonts/FUTURAM.TTF);
+}
+
+@font-face {
+  font-family: "Futura Bold";
+  src: url(./assets/fonts/FUTURAB.TTF);
+}
+
+/* End of typesface import */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img,
+iframe {
+  vertical-align: bottom;
+  max-width: 100%;
+}
+
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* End of reset */
+
+/* Globals */
+
+body {
+  font-family: "Futura Light", Arial, Helvetica, sans-serif;
+  background-color: #202020;
+  color: #fff;
+  font-size: 19px;
+  line-height: 1.5;
+  display: grid;
+  max-width: 1100px;
+  margin: 0 auto;
+  grid-template-columns: repeat(12, 1fr);
+  padding: 0 20px;
+  position: relative;
+  background-image: url(./assets/imgs/bg-img.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -300px 150px;
+}
+
+span {
+  font-family: "Futura Medium";
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 13px;
+  font-family: "Futura Medium";
+}
+
+span.underline {
+  width: 0;
+  height: 2px;
+  background-color: #68d1e9;
+  display: block;
+  margin-top: 5px;
+  transition: all 0.1s ease-in;
+}
+
+span.selected {
+  opacity: 1;
+  width: 30px;
+}
+
+nav:hover span.underline {
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+  display: block;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+  font-family: "Futura Medium";
+  letter-spacing: 2px;
+  margin-top: 150px;
+  font-size: 25px;
+}
+
+button {
+  color: #fff;
+  background-color: #68d1e9;
+  padding: 12px 35px;
+  border: none;
+  font-size: 17px;
+  text-transform: uppercase;
+  font-family: "Futura Medium";
+  border-radius: 4px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  background-color: #20aece;
+}
+
+/* End of globals */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  grid-column: 1 / span 12;
+  padding: 40px 0;
+  position: absolute;
+  width: 100%;
+}
+
+h1 {
+  font-size: 41px;
+  font-family: "Futura Bold";
+  letter-spacing: 2px;
+}
+
+section.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 4 / span 6;
+}
+
+div.content .icon {
+  height: 25px;
+  margin-bottom: 20px;
+}
+
+section.hero h1 {
+  margin-bottom: 30px;
+}
+
+section.hero div.content {
+  max-width: 500px;
+}
+
+section.hero div.content-contact {
+  margin-top: 90px;
+}
+
+/* form styles */
+
+form {
+  margin-top: 30px;
+  text-align: right;
+}
+
+label {
+  font-size: 14px;
+  display: block;
+  margin-top: 10px;
+  text-align: left;
+}
+
+input,
+textarea {
+  width: 100%;
+  background-color: #202020;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  color: #fff;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+textarea {
+  height: 260px;
+  resize: none;
+}
+
+input:focus,
+textarea:focus {
+  border: 1px solid #68d1e9;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+/* Media Queries */
+
+@media (max-width: 800px) {
+  body {
+    grid-template-columns: 1fr;
+  }
+
+  header {
+    grid-column: 1 / span 1;
+  }
+  section.hero {
+    grid-column: 1 / span 1;
+    padding: 0 20px;
+  }
+}
