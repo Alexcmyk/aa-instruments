@@ -345,3 +345,14 @@ textarea:focus {
     padding: 0 20px;
   }
 }
+
+@media (max-width: 400px) {
+  section.hero {
+    padding: 0;
+    margin-top: 50px;
+  }
+
+  section.hero div.content-contact {
+    margin-top: 200px;
+  }
+}
