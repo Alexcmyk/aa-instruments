@@ -179,7 +179,7 @@ body {
   background-image: url(./assets/imgs/bg-img.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: -300px 150px;
+  background-position: center;
 }
 
 span {
