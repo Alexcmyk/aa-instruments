@@ -331,6 +331,44 @@ textarea:focus {
   outline: none;
 }
 
+/* Page borders */
+
+div.page-border {
+  background-color: #fff;
+  position: fixed;
+  z-index: 8;
+}
+
+div.page-border--top {
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 10px;
+}
+
+div.page-border--left {
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 10px;
+}
+
+div.page-border--right {
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 10px;
+}
+
+div.page-border--bottom {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 10px;
+}
+
 /* Media Queries */
 
 @media (max-width: 800px) {
